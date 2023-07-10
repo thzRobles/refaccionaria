@@ -7,8 +7,8 @@ const mongoose = require('mongoose');
     try {
         // const url = 'mongodb://localhost/refa'
         // const url = 'mongodb+srv://<user>:<password>@cluster0.nu8vp.mongodb.net/'
-        const url = 'mongodb://127.0.0.1:27017/refa'
-        // const url = 'mongodb+srv://test:tst@cluster0.nu8vp.mongodb.net/?retryWrites=true&w=majority'
+        // const url = 'mongodb://127.0.0.1:27017/refa'
+        const url = 'mongodb+srv://test:tst@cluster0.nu8vp.mongodb.net/?retryWrites=true&w=majority'
         const db = await mongoose.connect(url, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
