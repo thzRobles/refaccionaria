@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* min-height: 100%; */
+    user-select: none;
+}
+
+/* grals */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .abutton {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    padding: 10px;
+    background-color: coral;
+    border-radius: 7px;
+} */
+
+.abtn i {
+    font-size: 25px;
+    margin: 10px; 
+}
+
+.abtn i:hover {
+    transform: scale(1.1);
+    transition: all .1s;
+    cursor: pointer;
+}
+
+i {
+    color: black;
+    font-size: 20px;
+}
+
+/* navbar */
+.nav {
+    margin-top: 25px;
+}
+
+.brand {
+    width: 30px;
+    height: 30px;
+    font-size: 50px;
+    font-style: oblique;
+    color: white;
+}
+
+/* / */
+
+.td-center {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+/* search */
+.search-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    height: 30px;
+}
+
+.input-search {
+    width: 100%;
+}
+
+.search-plus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-form i, 
+.search-reload i, 
+.search-plus i {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.search-form i:hover,
+.search-reaload i:hover,
+.search-plus i:hover {
+    transform: scale(1.1);
+    transition: all .1s;
+    cursor: pointer;
+}
+
+.btn-search {
+    border: none;
+    background: none;
+}
+
+/* add */
+.add-head {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #8E0E00;
+    font-size: 18px;
+}
+
+/* services */
+
+.serv-head {
+    display: grid;
+    grid-template-columns: 6fr 4fr 1fr 1fr;
+}
+
+.serie-label {
+    display: flex;
+
+    justify-content: flex-start;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(13, 110, 253);
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+

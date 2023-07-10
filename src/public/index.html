@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+            
+</head>
+<body>
+    <div class="grid-container">
+        
+        <!-- HEADER/NAVBAR -->
+        <header class="header" id="header">
+            HEADER
+            <div class="search-container">
+                <input type="text" placeholder="Filtro de busqueda" id="searchInput" autocomplete="off"/>
+            </div>
+            <!-- <div class="search-container">
+                <div class="input-field col s6">
+                    <input id="input-buscar" type="text" class="validate">
+                    <label for="input-buscar">Buscar</label>
+                </div>
+            </div> -->
+        </header>
+
+        <!-- ASIDE -->
+        <section class="aside" id="aside">
+            <div class="form-container" id="form-container">
+                REGISTRAR AUTOS
+                <form class="col s12" id="task-form">
+
+                    <!-- <label for="title">Title:</label>
+                    <input type="text" placeholder="Task Title" id="task-title">
+
+                    <label for="description">Description:</label>
+                    <textarea name="" id="task-description" cols="" rows="3" placeholder="Task Description"></textarea> -->
+
+                    <!-- <label for="serie">Serie:</label>
+                    <input type="text" placeholder="Task Serie" id="input-serie">
+                    
+                    <label for="placas">Placas:</label>
+                    <input type="text" placeholder="Task Placas" id="input-placas">
+
+                    <label for="marca">Marca:</label>
+                    <input type="text" placeholder="Task Marca" id="input-marca">
+
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" placeholder="Task Modelo" id="input-modelo">
+
+                    <label for="anio">Año:</label>
+                    <input type="text" placeholder="Task Año" id="input-anio"> -->
+
+                    <div class="input-field col s6">
+                        <input id="input-serie" type="text" class="validate">
+                        <label for="input-serie">Serie</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="input-placas" type="text" class="validate">
+                        <label for="input-placas">Placas</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="input-marca" type="text" class="validate">
+                        <label for="input-marca">Marca</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="input-modelo" type="text" class="validate">
+                        <label for="input-modelo">Modelo</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="input-anio" type="text" class="validate">
+                        <label for="input-anio">Año</label>
+                    </div>
+
+                    <!-- <div class="task-btn-container">
+                        <input class="task-btn" id="task-btn" type="submit" value="Registrar">
+                    </div> -->
+                    <div class="task-btn-container">
+                        <!-- <button class="task-btn" id="task-btn" onclick="registrarDatos()">Registrar</button> -->
+                        <!-- <button class="task-btn" id="task-btn" >Registrar</button> -->
+                        <button id="btn-task-save">Save</button>
+                    </div>
+
+                </form>
+            </div> 
+        </section>
+
+        <!-- MAIN -->
+        <section class="main" id="main">
+            <div class="table-container">
+                <div class="container">
+                    <div class="section">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Serie</th>
+                                    <th>Placas</th>
+                                    <th>Marca</th>
+                                    <th>Modelo</th>
+                                    <th>Año</th>
+                                </tr>
+                            </thead>
+                            <!-- <tbody id="car">
+                            </tbody> -->
+                            <!-- <div id="task-container">
+                            </div> -->
+                            <tbody id="tasks-container">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <!-- FOOTER -->
+        <footer class="footer" id="footer">
+            FOOTER
+        </footer>
+
+    </div>
+    <!-- <script src="index.js" type="module"></script> -->
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

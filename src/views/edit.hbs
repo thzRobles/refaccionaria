@@ -1,0 +1,43 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card">
+                <div class="card-body">
+
+                    {{!-- Titulo editar datos de vehiculo --}}
+                    <div class="add-head">
+                        <span class="edit-title card-title">ACTUALIZAR DATOS</span>
+                        <a class="abtn float-end" href="/"><i class="fa-solid fa-reply"></i></a>
+                    </div>
+
+                    {{!-- Form editar datos de vehiculo --}}
+                    <form class="md-4" id="edit-form" action="/edit/{{car._id}}" method="POST">
+
+                        <div class="mb-3">
+                            <input name="serie" id="serie" type="text" class="form-control" autocomplete="off" placeholder="serie" value="{{car.serie}}">
+                        </div>
+                        <div class="mb-3">
+                            <input name="placas" id="placas" type="text" class="form-control" autocomplete="off" placeholder="placas" value="{{car.placas}}">
+                        </div>
+                        <div class="mb-3">
+                            <input name="marca" id="marca" type="text" class="form-control" autocomplete="off" placeholder="marca" value="{{car.marca}}">
+                        </div>
+                        <div class="mb-3">
+                            <input name="modelo" id="modelo" type="text" class="form-control" autocomplete="off" placeholder="modelo" value="{{car.modelo}}">
+                        </div>
+                        <div class="mb-3">
+                            <input name="anio" id="anio" type="text" class="form-control" autocomplete="off" placeholder="año" value="{{car.anio}}">
+                        </div>
+
+                        {{!-- Button guardar datos nuevos de vehiculo --}}
+                        <div>
+                            <button class="btn btn-success float-end"><i class="fa-solid fa-floppy-disk"></i></button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

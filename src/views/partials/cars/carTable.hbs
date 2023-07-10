@@ -1,0 +1,59 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="card text-center">
+
+                <div class="card-body text-cener">
+                    
+                    {{!-- Barra de busqueda de vehiculos --}}
+                    <div class="search-container">
+                        <form class="search-form" action="/find" method="POST">
+                            <input name="serie" type="text" class="form-control" autocomplete="off" placeholder="buscar por numero de serie (Completa)">
+                            <button class="btn-search"><a class="abtn"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+                        </form>
+                        <div class="search-plus">
+                            <a class="abtn" href="/"><i class="fa-solid fa-rotate-right text-primary"></i></a>
+                            <a class="abtn" href="/add"><i class="fa-solid fa-plus text-success"></i></a>
+                        </div>
+                    </div>
+
+                    {{!-- Tabla de vehiculos --}}
+                    <table class="table table-striped mt-3">
+                        <thead>
+                            <tr>
+                                {{!-- <th></th> --}}
+                                <th>Serie</th>
+                                <th>Placas</th>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Año</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each cars}}
+                                <tr>
+                                    {{!-- <td></td> --}}
+                                    <td>{{serie}}</td>
+                                    <td>{{placas}}</td>
+                                    <td>{{marca}}</td>
+                                    <td>{{modelo}}</td>
+                                    <td>{{anio}}</td>
+                                    <td class="td-center">
+                                        <a href="/addServ/{{_id}}"><i class="fa-solid fa-plus text-success"></i></a>
+                                        <a href="/services/{{_id}}"><i class="fa-solid fa-screwdriver-wrench"></i></a>
+                                        <a href="/edit/{{_id}}"><i class="fa-solid fa-pen-to-square text-primary"></i></a>
+                                        <a href="/delete/{{_id}}" onclick="return ConfirmDelete()"><i class="fa-solid fa-trash-can text-danger"></i></a>
+                                    </td>
+                                </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+
+                </div>
+                
+            </div>
+        </div> 
+    </div>  
+    
+</div>

@@ -1,0 +1,41 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card">
+                <div class="card-body">
+                    
+                    {{!-- Titulo insertar nuevo vehiculo --}}
+                    <span class="title">INSTERTAR NUEVO VEHICULO</span>
+
+                    {{!-- Form insertar nuevo vehiculo --}}
+                    <form class="mt-3" id="car-form" action="/add" method="POST">
+
+                        <div class="mb-3">
+                            <input name="serie" id="serie" type="text" class="form-control" autocomplete="off" placeholder="serie">
+                        </div>
+                        <div class="mb-3">
+                            <input name="placas" id="placas" type="text" class="form-control" autocomplete="off" placeholder="placas">
+                        </div>
+                        <div class="mb-3">
+                            <input name="marca" id="marca" type="text" class="form-control" autocomplete="off" placeholder="marca">
+                        </div>
+                        <div class="mb-3">
+                            <input name="modelo" id="modelo" type="text" class="form-control" autocomplete="off" placeholder="modelo">
+                        </div>
+                        <div class="mb-3">
+                            <input name="anio" id="anio" type="text" class="form-control" autocomplete="off" placeholder="año">
+                        </div>
+
+                        {{!-- Button guardar nuevo vehiculo --}}
+                        <div class="task-btn-container">
+                            <button id="btn-task-save">Save</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
