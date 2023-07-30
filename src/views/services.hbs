@@ -27,9 +27,9 @@
                                 <tr>
                                     <td></td>
                                     <td>{{fecha}}</td>
-                                    <td>{{servicio}}</td>
+                                    <td class="td-servicio">{{servicio}}</td>
                                     {{!-- <td><a href="/editServ/{{_id}}">Update</a></td>  --}}
-                                    <td><a href="/deleteServ/{{_id}}" onclick="return ConfirmDeleteServ()">Delete</a></td>
+                                    <td><a href="/deleteServ/{{_id}}" onclick="return ConfirmDeleteServ()"><i class="fa-solid fa-trash-can text-danger"></a></td>
                                 </tr>
                             {{/each}} 
                         </tbody>

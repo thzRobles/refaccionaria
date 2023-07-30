@@ -1,14 +1,14 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-lg-8 offset-lg-2">
-            <div class="card text-center">
+            <div class="card text-center card-custom">
 
-                <div class="card-body text-cener">
+                <div class="card-body text-cener card-body-custom">
                     
                     {{!-- Barra de busqueda de vehiculos --}}
                     <div class="search-container">
                         <form class="search-form" action="/find" method="POST">
-                            <input name="serie" type="text" class="form-control" autocomplete="off" placeholder="buscar por numero de serie (Completa)">
+                            <input name="serie" type="text" class="form-control" autocomplete="off" placeholder="numero de serie (Completa)">
                             <button class="btn-search"><a class="abtn"><i class="fa-solid fa-magnifying-glass"></i></a></button>
                         </form>
                         <div class="search-plus">
@@ -24,9 +24,9 @@
                                 {{!-- <th></th> --}}
                                 <th>Serie</th>
                                 <th>Placas</th>
-                                <th>Marca</th>
-                                <th>Modelo</th>
-                                <th>Año</th>
+                                <th>Marca, Modelo</th>
+                                {{!-- <th>Modelo</th> --}}
+                                <th class="th-anio">Año</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
@@ -36,9 +36,9 @@
                                     {{!-- <td></td> --}}
                                     <td>{{serie}}</td>
                                     <td>{{placas}}</td>
-                                    <td>{{marca}}</td>
-                                    <td>{{modelo}}</td>
-                                    <td>{{anio}}</td>
+                                    <td>{{marca}} {{modelo}}</td>
+                                    {{!-- <td>{{modelo}}</td> --}}
+                                    <td class="td-anio">{{anio}}</td>
                                     <td class="td-center">
                                         <a href="/addServ/{{_id}}"><i class="fa-solid fa-plus text-success"></i></a>
                                         <a href="/services/{{_id}}"><i class="fa-solid fa-screwdriver-wrench"></i></a>
